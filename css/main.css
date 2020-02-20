@@ -6,4 +6,43 @@ body {
   margin: 0;
   background-color: #212121;
   color: white;
+  position: relative;
+}
+
+body img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+body img.second {
+  animation-name: fadeMeBro;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+
+@keyframes fadeMeBro {
+  
+  0% {
+    opacity:1;
+  }
+ 
+  45% {
+    opacity:1;
+  }
+ 
+  55% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:0;
+  }
 }
